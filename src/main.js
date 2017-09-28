@@ -4,11 +4,14 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import ElementUI from "element-ui";
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-default/index.css';
 import NProgress from "nprogress";
-import "nprogress/nprogress.css"
-import * as filters from "./filter"
+import "nprogress/nprogress.css";
+import VueParticles from "vue-particles";
+import * as filters from "./filter";
+import store from "./store";
 Vue.use(ElementUI)
+Vue.use(VueParticles);
 Vue.config.productionTip = false
 
 Object.keys(filters).forEach(key => {
@@ -25,6 +28,7 @@ router.afterEach((to,from,next) => {
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

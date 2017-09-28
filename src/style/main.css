@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   font: 14px/1.5 "Helvetica Neue",Helvetica,Tahoma,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif ;
+   color: rgba(0, 0, 0, 0.65);
+}
+html,body,#app,.layout{
+    height: 100%
+}
+.fr{float: right;}
+.fl{float: left;}
+.clearbox:after{content: "";display: block;clear: both;visibility:hidden;height:0}
+.siber{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+    width: 200px;
+    background: #324157;
+    transition: width 0.28s ease-out;
+}
+.content{
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    height: 100%;
+    transition: width 0.28s ease-out;
+}

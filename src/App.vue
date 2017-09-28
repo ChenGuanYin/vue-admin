@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "./style/main.css";
   @import "~normalize.css/normalize.css";
   @import "./style/common.scss";
     .fade-enter-active,

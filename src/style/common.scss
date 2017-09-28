@@ -1,3 +1,71 @@
-html,body,#app{
-    height: 100%
+.wrapper{
+    .sidebar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0px;
+        width: 200px;
+        background: #324157;
+        transition: width 0.28s ease-out;
+        overflow: hidden;
+        .el-menu-vertical-demo {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            transition: width 0.2s ease-out;
+            background: #263238;
+            .iconfont {
+                margin-right: 10px;
+            }
+            &:not(.el-menu--collapse) {
+                right: -17px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            .sidebar-title{
+                display: block;
+                padding: 0 20px;
+                margin-top: 18px;
+                font-size: 12px;
+                line-height: 36px;
+                color: #76838f;
+            }
+            .el-submenu .el-menu-item,
+            .el-menu-item, .el-submenu__title{
+                height: 37px;
+                line-height: 36px;
+                color: rgba(163,175,183,.9);
+            }
+            .el-submenu .el-submenu__title:hover,
+            .el-submenu .el-menu-item:hover,.el-menu-item:hover{
+                color: rgba(255,255,255,.8);
+                background-color: rgba(255,255,255,.04)
+            }
+            .el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active, .el-menu-item.is-active {
+                background: rgba(0,0,0,.06);
+                color: #ffffff;
+            }
+            .el-menu{
+                background: #242f35;
+            }
+            li .el-submenu>.el-menu{
+                background-color: rgba(34, 44, 50, 1);
+            }
+        }
+    }
+    .content{
+        
+    }
+    &.hiddenSiber{
+        .content{
+            margin-left: 60px;
+            min-width: 1090px;
+        }
+        .sidebar.collapse,.el-menu--collapse{
+            width: 60px;
+            overflow: inherit;
+        }
+    }
 }
