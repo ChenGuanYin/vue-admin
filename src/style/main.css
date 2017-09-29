@@ -12,6 +12,9 @@ body{
 html,body,#app,.layout{
     height: 100%
 }
+a{
+    text-decoration: none;
+}
 .fr{float: right;}
 .fl{float: left;}
 .clearbox:after{content: "";display: block;clear: both;visibility:hidden;height:0}
@@ -22,11 +25,11 @@ html,body,#app,.layout{
     bottom: 0px;
     width: 200px;
     background: #324157;
-    transition: width 0.28s ease-out;
+    transition: width 0.35s ease-out;
 }
 .content{
     margin-left: 200px;
     width: calc(100% - 200px);
     height: 100%;
-    transition: width 0.28s ease-out;
+    transition: all 0.3s ease-out;
 }

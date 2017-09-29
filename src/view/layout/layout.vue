@@ -3,6 +3,7 @@
         <siber :collapse="collapse"></siber>
         <main class="content">
             <v-head :collapse="collapse"></v-head>
+            <router-view></router-view>
         </main>
     </div>
 </template>
@@ -26,7 +27,7 @@ export default {
         ])
     },
     methods: {
-
+        
     }
 }
 </script>
