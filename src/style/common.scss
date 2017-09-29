@@ -7,6 +7,9 @@
         width: 60px;
         .el-menu--collapse{
             width: 60px;
+            .el-menu{
+                min-width: 180px;
+            }
         }
     }
 }

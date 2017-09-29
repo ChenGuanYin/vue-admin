@@ -1,7 +1,7 @@
 <template>
   <div class="siber">
-    <el-menu :default-active="$route.path" unique-opened theme="dark" :collapse="collapse">
-      <siber-item :router="router"></siber-item>
+    <el-menu :default-active="$route.path" unique-opened router theme="dark" :collapse="collapse">
+      <siber-item :item="item" :key="item.path" v-for="item in router"></siber-item>
     </el-menu>
   </div>
 </template>
