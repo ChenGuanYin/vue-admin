@@ -1,6 +1,6 @@
 # vue-admin
 
-> A Vue.js project
+> A Vue.js
 
 ## Build Setup
 
