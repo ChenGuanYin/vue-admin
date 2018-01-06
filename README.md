@@ -1,10 +1,10 @@
-# vue-admin
+# vue-admin 后台管理
 
 > A Vue.js
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
