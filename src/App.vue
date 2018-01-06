@@ -6,26 +6,24 @@
 
 <script>
 export default {
-  name: 'app',
-  data(){
-    return {
-
-    }
-  },
-}
+  name: "app",
+  data() {
+    return {};
+  }
+};
 </script>
 
 <style lang="scss">
-  @import "./style/main.css";
-  @import "~normalize.css/normalize.css";
-  @import "./style/common.scss";
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: all .2s ease;
-    }
+@import "./style/main.css";
+@import "~normalize.css/normalize.css";
+@import "./style/common.scss";
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
 
-    .fade-enter,
-    .fade-leave-active {
-        opacity: 0;
-    }
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
 </style>

@@ -9,26 +9,26 @@
 </template>
 <script>
 export default {
-    props: ["isActive"],
-    methods: {
-        toggleClick() {
-            this.$emit("toggleClick");
-        }
+  props: ["isActive"],
+  methods: {
+    toggleClick() {
+      this.$emit("toggleClick");
     }
-}
+  }
+};
 </script>
 <style scope>
 .hamburger {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    display: inline-block;
-    transform: rotate(0deg);
-    transition: 0.38s;
-    transform-origin: 50% 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: 0.38s;
+  transform-origin: 50% 50%;
 }
 
 .hamburger.is-active {
-    transform: rotate(90deg)
+  transform: rotate(90deg);
 }
 </style>

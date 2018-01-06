@@ -1,12 +1,10 @@
 <template>
     <div>
-        表单
+        导入数据
     </div>
 </template>
 
 <script>
-    
-
 </script>
 
 <style>

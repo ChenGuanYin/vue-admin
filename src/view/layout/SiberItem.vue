@@ -20,10 +20,9 @@
 
 <script>
 export default {
-    name: "SiberItem",
-    props: ["item"]
-}
-
+  name: "SiberItem",
+  props: ["item"]
+};
 </script>
 
 <style>

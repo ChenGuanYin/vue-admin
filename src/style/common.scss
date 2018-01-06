@@ -1,16 +1,15 @@
-.layout.hiddenSiber{
-    .content{
-        margin-left: 60px;
-        width: calc(100% - 60px);
+.layout.hiddenSiber {
+  .content {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+  .siber {
+    width: 60px;
+    .el-menu--collapse {
+      width: 60px;
+      .el-menu {
+        min-width: 180px;
+      }
     }
-    .siber{
-        width: 60px;
-        .el-menu--collapse{
-            width: 60px;
-            .el-menu{
-                min-width: 180px;
-            }
-        }
-    }
+  }
 }
-

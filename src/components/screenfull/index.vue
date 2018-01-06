@@ -7,36 +7,36 @@
 </template>
 
 <script>
-import screenfull from "screenfull"
+import screenfull from "screenfull";
 export default {
-    props: {
-        width: {
-            type: Number,
-            default: 24
-        },
-        height: {
-            type: Number,
-            default: 24
-        },
-        fill: {
-            type: String,
-            default: "#48576a"
-        }
+  props: {
+    width: {
+      type: Number,
+      default: 24
     },
-    methods: {
-        screenFull(){
-            if(!screenfull.enabled){
-                this.$message.warning("you browser can not work")
-                return false;
-            }
-            screenfull.toggle()
-        }
+    height: {
+      type: Number,
+      default: 24
+    },
+    fill: {
+      type: String,
+      default: "#48576a"
     }
-}
+  },
+  methods: {
+    screenFull() {
+      if (!screenfull.enabled) {
+        this.$message.warning("you browser can not work");
+        return false;
+      }
+      screenfull.toggle();
+    }
+  }
+};
 </script>
 
 <style scope>
-.icon{
-    cursor: pointer;
+.icon {
+  cursor: pointer;
 }
 </style>

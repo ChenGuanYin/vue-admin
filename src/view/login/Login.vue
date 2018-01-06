@@ -25,64 +25,64 @@
 </div>
 </template>
 <script>
-    export default {
-        name: "login",
-        data () {
-            return {
-                password: null,
-                userName: null,
-                remember: true,
-            }
-        },
-        methods:{
-            goLogin(){
-                this.$router.push("/")
-            }
-        }
+export default {
+  name: "login",
+  data() {
+    return {
+      password: null,
+      userName: null,
+      remember: true
+    };
+  },
+  methods: {
+    goLogin() {
+      this.$router.push("/");
     }
+  }
+};
 </script>
 <style lang="scss" rel="stylesheet/scss">
-    .login{
-        background-image: url("../../../static/img/sky.jpg");
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        &>div{
-            width: 100%;
-            height: 100%;
-        }
-        main{
-            width: 320px;
-            height: 340px;
-            padding: 36px;
-            position: absolute;
-            left: calc(50% - 160px);
-            top: calc(50% - 170px);
-            border-radius: 10px;
-            background-color: rgba(255,255,255,0.9);
-            box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
-            h3{
-                text-align: center;
-                height: 40px;
-                line-height: 40px;
-                cursor: pointer;
-                margin-bottom: 10px;
-                font-weight: 500;
-            }
-            .login-button{
-                width: 100%
-            }
-            .iconfont{
-                position: absolute;
-                left: 10px;
-                top: 0;
-                z-index: 2;
-            }
-            .el-input__inner{
-                padding-left: 30px;
-            }
-        }
+.login {
+  background-image: url("../../../static/img/sky.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    width: 320px;
+    height: 340px;
+    padding: 36px;
+    position: absolute;
+    left: calc(50% - 160px);
+    top: calc(50% - 170px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+    h3 {
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-weight: 500;
     }
+    .login-button {
+      width: 100%;
+    }
+    .iconfont {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      z-index: 2;
+    }
+    .el-input__inner {
+      padding-left: 30px;
+    }
+  }
+}
 </style>
