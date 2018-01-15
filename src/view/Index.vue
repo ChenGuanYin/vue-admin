@@ -3,6 +3,7 @@
 			<div class="listHeader">
 				<div class="search">
 					<el-input v-model="input" placeholder="请输入内容"></el-input>
+          <el-button @click="$router.push('/login')">去登陆</el-button>
 				</div>
 			</div>
     </div>

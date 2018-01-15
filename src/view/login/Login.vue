@@ -1,6 +1,6 @@
 <template>
 <div class="login">
-    <vue-particles color="#dedede" :particlesNumber="150" shapeType="edge"></vue-particles>
+    <!-- <vue-particles color="#dedede" :particlesNumber="150" shapeType="edge"></vue-particles> -->
     <main>
         <h3>登录</h3>    
         <el-form>
